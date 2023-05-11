@@ -35,10 +35,11 @@ return (1 + _strlen_recursion(s + 1));
  */
 int check_pal(char *s, int i, int len)
 {
-if (*(s + i) != *(s + len - 1)
+if (*(s + i) != *(s + len - 1))
 return (0);
 if (i >= len)
 return (1);
 return (check_pal(s, i + 1, len - 1));
+}
 }
 
