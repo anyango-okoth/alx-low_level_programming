@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def is_palindrome(n):
     return str(n) == str(n)[::-1]
 
@@ -17,4 +18,3 @@ result = find_largest_palindrome()
 # Save the result in the file "102-result"
 with open("102-result", "w") as file:
     file.write(str(result))
-
